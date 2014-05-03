@@ -1,0 +1,147 @@
+/* WINDOW RESIZE */
+
+@media (max-width: 1280px){
+}
+
+/* TABLET */
+
+@media (max-width: 768px){
+	body {
+		font-size: 9pt!important;
+		line-height: 10pt!important;
+	}
+
+	header {
+		display: block!important;
+	}
+
+	aside {
+		display: none!important;
+	}
+	article {
+		float: none!important;
+		margin: 0!important;
+		width: 100%!important;
+		display: block!important;
+	}
+
+			.logo {
+				width: 100%;
+				margin-left: 20%;
+				text-align: center;
+			}
+
+			#logobox {
+				background-color: white;
+				clear: both;
+				display: block;
+				float: none;
+				padding: 10px;
+				width: 100%;
+			}
+
+			#linkbox {
+				background-color: white;
+				border-top: 1px solid #EEEEEE;
+				display: block;
+				float: none;
+				padding: 10px 0px 0px 0px;
+				width: 100%;
+			}
+
+			a.navlink, a.navlink:link, a.navlink:active, a.navlink:visited {
+				border: none;
+				display: block;
+				float: center;
+				list-style: none;
+				margin-left: -15px;
+				padding: 5px;
+				text-align:center;
+				width: 100%;
+			}
+
+			a.navlink:hover {
+				border: none;
+				display: block;
+				float: center;
+				list-style: none;
+				text-align:center;
+				width: 100%;
+			}
+
+			.altfooter {
+				display: none;
+			}
+
+			footer {
+				display: block!important;
+			}
+}
+
+/* PHONE */
+
+@media (max-width: 480px){
+	body {
+		font-size: 10px;
+	}	
+		nav {
+			padding: 0px 0px 7px 0px;
+			margin: 0px;
+		}
+
+			.logo {
+				width: 100%;
+				text-align: center;
+			}
+
+			#logobox {
+				clear: both;
+				display: inline-block;
+				padding: 10px;
+				width: 100%;
+			}
+
+			#linkbox {
+				background-color: white;
+				border-top: 1px solid #EEEEEE;
+				display: block;
+				float: none;
+				padding: 10px 0px 0px 0px;
+				width: 100%;
+			}
+
+			a.navlink, a.navlink:link, a.navlink:active, a.navlink:visited {
+				border: none;
+				display: block;
+				float: center;
+				list-style: none;
+				margin-left: -15px;
+				padding: 5px;
+				text-align:center;
+				width: 100%;
+			}
+
+			a.navlink:hover {
+				border: none;
+				display: block;
+				float: center;
+				list-style: none;
+				text-align:center;
+				width: 100%;
+			}
+
+		aside {
+			display: none;
+		}
+
+	h1, h2, h3, span, body, div, a {
+		font-size: .80m!important;
+		}
+
+	.altfooter {
+		display: none;
+		}
+
+	footer {
+		display: block!important;
+	}

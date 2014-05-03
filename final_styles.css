@@ -1,0 +1,345 @@
+body {
+	color: #666666;
+	background-color: #EFEFEF;
+	font-family: Aleo-Light, Helvetica-light, Arial;
+	font-size: 12pt;
+	line-height: 14pt;
+
+}
+
+/* LAYOUT STRUCTURE */
+
+#wrapbox {
+	background-color: purple;
+	margin: 0;
+	padding: 0px;
+	width: 100%;
+}
+
+	header {
+		background-color: #FFFFFF;
+		display: none; /* inline-block; */
+		padding: 0;
+		width: 100%;
+	}
+
+	nav {
+		background-color: #FFFFFF;
+		border-bottom: 1px solid #EEEEEE;
+		display: inline-block;
+		margin: 0px;
+		padding: 0;
+		width: 100%;
+	}
+
+		#logobox {
+			background-color: #FFFFFF;
+			display: block;
+			float: left;
+			padding: 15px;
+			vertical-align: middle;
+			width: 50%;
+		}
+
+		#linkbox {
+			background-color: #FFFFFF;
+			display: block;
+			float: right;
+			padding: 15px;
+			width: 50%;	
+		}
+
+	article {
+		background-color: #FFFFFF;
+		border-left: 1px solid #EEEEEE;
+		clear: both;
+		display: inline;
+		float: right;
+		padding: 100px 15%;
+		width: 80%;
+		height: 100%;
+	}
+
+		#articlebox {
+			background-color: #FFFFFF;
+			display: block;
+			width: 100%;
+			-webkit-column-count:3;
+			-moz-column-count:3;
+			column-count:3;
+			-webkit-column-gap:15px;
+			-moz-column-gap:15px;
+			column-gap:15px;
+		}
+
+		.leftcolumn {
+			background-color: blue;
+			display: block;
+			float: left;
+			height: 100%;
+			padding: 10px;
+			width: 80%;
+		}
+
+		.rightcolumn {
+			background-color: orange;
+			display: block;
+			float: right;
+			padding: 10px;
+			width: 20%;
+		}
+
+		.columnwrap {
+			background-color: green;
+			display: block;
+			height: 100%;
+			width: 100%;
+			margin-bottom: 100px;
+		}
+
+		.columnwrap2 {
+			clear: both;
+		}
+	aside {
+		background-image: url("");
+		background-color: #FAFAFA;
+		display: inline-block;
+		position: fixed;
+		float: left;
+		padding: 100px 2%;
+		width: 20%;
+		height: 100%;
+	}
+
+	footer {
+		font-family: Aleo-light;
+		background-color: #ffffff;
+		display: none;
+		clear: both;
+		font-size: 8pt;
+		text-align: center;
+		padding: 20px 0;
+		margin: 0px;
+		width: 100%;
+	}
+
+/* HEADING STYLES */
+
+h1 {
+	background-color: #673051;
+	color: #FFFFFF;
+	display: block;
+	font-family: Helvetica-light, Arial;
+	font-size: 14pt;
+	letter-spacing: -1px;
+	margin-bottom: 5px;
+	padding: 5px;
+	width: 100%;
+}
+
+/* NORMAL LINK STYLES */
+
+a, a:link, a:active, a:visited {
+	color: #673051;
+	font-family: Arial;
+	font-size: 9pt;
+	font-weight :normal;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #645959;
+}
+
+/* NAVLINK STYLES */
+
+a.navlink, a.navlink:link, a.navlink:active, a.navlink:visited {
+	border-right: 5px solid #FFFFFF;
+	color: #673051;
+	display: inline;
+	float: left;
+	font-family: Georgia;
+	font-size: 9pt;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-right: 5px;
+}
+
+a.navlink:hover {
+	color: #645959;
+	border-right: 5px solid #673051;
+	padding-right: 5px;
+}
+
+a.navleft, a.navleft:link, a.navleft:active, a.navleft:visited {
+	display: block;
+	text-align: center;
+	margin-top: 30%;
+	width: 100%;
+	height: 100px;
+}
+
+a.anchor {
+	clear: both;
+	font-family: Aleo, Helvetica-light, Arial;
+	font-size: 20pt;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+a.linkbutton, a.linkbutton:link, a.linkbutton:active, a.linkbutton:visited {
+	font-family: Bebas;
+	font-size: 14pt;
+	color: #CCCCCC;
+	border: 5px solid #CCCCCC;
+	display: block;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	width: 95%;
+	padding: 40px 0px;
+	margin-left: 10px;
+}
+
+a.linkbutton:hover {
+	color: #673051;
+	border: 5px solid #673051;
+}
+
+/* NAV */
+
+.logo, a .logo {
+	width: 100px;
+	text-align: center;
+	margin-bottom: 30%;
+}
+
+nav .logo {
+	margin-bottom: 0px;
+	}
+
+nav ul {
+	margin: 0;
+}
+
+ul.navlist {
+	list-style: none;
+	text-align: right;
+}
+
+	ul.navlist li {
+		padding: 5px;
+	}
+
+/* ARTICLE */
+
+.articlepic {
+	border: 3px solid #EEEEEE;
+	float: left;
+	margin: 5px 5px 5px 0px;
+	width: 50%;
+}
+
+/* ETC STYLES */
+
+article p {
+	margin-bottom: 10px;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+i {
+	font-family: Georgia;
+	font-style: italic;
+}
+
+em {
+	font-style: italic;
+}
+
+u {
+	text-decoration: underline;
+}
+
+small {
+	font-size: .75em;
+}
+
+.credit {
+	text-align: right;
+}
+
+.navleft span {
+	font-family: Bebas Neue!important;
+	font-size: 20pt;
+	font-weight: normal;
+}
+
+a.anchor span {
+	font-family: Bebas Neue!important;
+	font-size: 30pt!important;
+	font-weight: normal;
+	letter-spacing: 4px;
+	line-height: 30pt;
+}
+
+.navleft, .navleft:link, .navleft:active, .navleft {
+	font-family: Georgia;
+	font-size: 7pt;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 5%;
+}
+
+.columnwrap {
+	background-color: red;
+	display: block;
+	width: 100%;
+}
+
+hr {
+background-color:#cccccc;
+border-width:0;
+color:#cccccc;
+height:1px;
+line-height:0;
+margin: 100px auto;
+text-align:center;
+width:80%;
+clear: both;
+display: block;
+}
+
+.altfooter {
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.colwrap {
+	background-color: ;
+
+}
+
+.colwrap:before, .colwrap:after {
+display: block;
+content: " ";
+clear: both;
+}
+
+.leftcol {
+	background-color: ;
+	width: 75%;
+	float: left;
+	padding-right: 20px;
+}
+
+.rightcol {
+	background-color: ;
+	float: right;
+	width: 25%;
+}
