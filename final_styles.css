@@ -158,7 +158,7 @@ a.navlink, a.navlink:link, a.navlink:active, a.navlink:visited {
 	color: #673051;
 	display: inline;
 	float: left;
-	font-family: Georgia;
+	font-family: Bebas, Helvetica, Arial;
 	font-size: 9pt;
 	font-weight: normal;
 	text-decoration: none;
@@ -191,7 +191,7 @@ a.anchor {
 }
 
 a.linkbutton, a.linkbutton:link, a.linkbutton:active, a.linkbutton:visited {
-	font-family: Bebas;
+	font-family: Bebas, Arial;
 	font-size: 14pt;
 	color: #CCCCCC;
 	border: 5px solid #CCCCCC;

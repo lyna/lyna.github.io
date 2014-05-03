@@ -76,6 +76,27 @@
 			footer {
 				display: block!important;
 			}
+
+
+	a.linkbutton, a.linkbutton:link, a.linkbutton:active, a.linkbutton:visited {
+		font-family: Bebas, Arial;
+		font-size: 10pt!important;
+		color: #CCCCCC;
+		border: 3px solid #CCCCCC!important;
+		display: block;
+		text-align: center;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		width: 95%;
+		padding: 40px 0px;
+		margin-left: 10px;
+	}
+
+	a.linkbutton:hover {
+		color: #673051;
+		border: 3px solid #673051!important;
+	}
+
 }
 
 /* PHONE */
@@ -136,12 +157,32 @@
 
 	h1, h2, h3, span, body, div, a {
 		font-size: .80m!important;
-		}
+	}
 
 	.altfooter {
 		display: none;
-		}
+	}
 
 	footer {
 		display: block!important;
 	}
+
+	a.linkbutton, a.linkbutton:link, a.linkbutton:active, a.linkbutton:visited {
+		font-family: Bebas, Arial;
+		font-size: 9pt!important;
+		color: #CCCCCC;
+		border: 2px solid #CCCCCC;
+		display: block;
+		text-align: center;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		width: 95%;
+		padding: 40px 0px;
+		margin-left: 10px;
+	}
+
+	a.linkbutton:hover {
+		color: #673051;
+		border: 2px solid #673051;
+	}
+}
