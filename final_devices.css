@@ -111,6 +111,10 @@
 		line-height: 35pt;
 	}
 
+	.navlink:first-child{
+		display: none;
+	}
+
 	.photo-grid {
 		margin: 1em auto;
 		max-width: 100%;
