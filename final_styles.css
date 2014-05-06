@@ -306,6 +306,12 @@ table.contact {
 	transition-delay: 100ms;
 }
 
+.avatar {
+	width: 200px;
+	float: left;
+	margin-right: 20px;
+}
+
 /* I got everything from here on out from
 
 credit:
