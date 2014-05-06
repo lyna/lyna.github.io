@@ -312,6 +312,19 @@ table.contact {
 	margin-right: 20px;
 }
 
+.more, .more:link, .more:active, .more:visited {
+	font-family: 'Oswald', sans-serif;
+	color: #777777;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	border: 3px solid #777777;
+}
+
+.more:hover{
+	color: #673051;
+	border:3px solid #673051;	
+}
+
 /* I got everything from here on out from
 
 credit:
