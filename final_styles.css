@@ -1,33 +1,37 @@
+
+html {
+	height: 100%;
+}
+
 body {
 	color: #666666;
-	background-color: #EFEFEF;
-	font-family: Aleo-Light, Helvetica-light, Arial;
+	background-color: #FFFFFF;
+	font-family: Helvetica-light, Arial;
 	font-size: 12pt;
 	line-height: 14pt;
-
+	height: 100%;
 }
 
 /* LAYOUT STRUCTURE */
 
 #wrapbox {
-	background-color: purple;
 	margin: 0;
-	padding: 0px;
+	padding: 0;
 	width: 100%;
 }
 
 	header {
 		background-color: #FFFFFF;
-		display: none;
 		padding: 0;
 		width: 100%;
+		display: none;
 	}
 
 	nav {
 		background-color: #FFFFFF;
 		border-bottom: 1px solid #EEEEEE;
-		display: inline-block;
-		margin: 0px;
+		display: none;
+		margin: 0;
 		padding: 0;
 		width: 100%;
 	}
@@ -41,11 +45,10 @@ body {
 			width: 50%;
 		}
 
-		#linkbox {
+		#topnav {
 			background-color: #FFFFFF;
 			display: block;
 			float: right;
-			padding: 15px;
 			width: 50%;	
 		}
 
@@ -55,49 +58,24 @@ body {
 		clear: both;
 		display: inline;
 		float: right;
-		padding: 100px 15%;
+		padding: 50px 15%;
 		width: 80%;
 		height: 100%;
 	}
-	
-		.leftcolumn {
-			background-color: blue;
-			display: block;
-			float: left;
-			height: 100%;
-			padding: 10px;
-			width: 80%;
-		}
-
-		.rightcolumn {
-			background-color: orange;
-			display: block;
-			float: right;
-			padding: 10px;
-			width: 20%;
-		}
-
-		.columnwrap {
-			background-color: green;
-			display: block;
-			height: 100%;
-			width: 100%;
-			margin-bottom: 100px;
-		}
 
 	aside {
-		background-image: url("");
 		background-color: #FAFAFA;
 		display: inline-block;
 		position: fixed;
 		float: left;
-		padding: 100px 2%;
+		padding: 50px auto;
 		width: 20%;
+		text-align: center;
 		height: 100%;
 	}
 
 	footer {
-		font-family: Aleo-light, Helvetica-light, Arial;
+		font-family: Helvetica-light, Arial;
 		background-color: #ffffff;
 		display: none;
 		clear: both;
@@ -116,7 +94,7 @@ h1 {
 	display: block;
 	font-family: 'Oswald', sans-serif;
 	font-size: 14pt;
-	letter-spacing: -1px;
+	letter-spacing: -3px;
 	margin-bottom: 5px;
 	padding: 5px;
 	width: 100%;
@@ -126,101 +104,77 @@ h1 {
 
 a, a:link, a:active, a:visited {
 	color: #673051;
-	font-family: H
-	font-size: 9pt;
+	font-family: Helvetica, Arial;
 	font-weight :normal;
 	text-decoration: none;
 }
 
 a:hover {
 	color: #645959;
-}
-
-/* NAVLINK STYLES */
-
-a.navlink, a.navlink:link, a.navlink:active, a.navlink:visited {
-	border-right: 5px solid #FFFFFF;
-	color: #673051;
-	display: inline;
-	float: left;
-	font-family: 'Oswald', sans-serif;
-	font-size: 9pt;
-	font-weight: normal;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding-right: 5px;
-}
-
-a.navlink:hover {
-	color: #645959;
-	border-right: 5px solid #673051;
-	padding-right: 5px;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
 }
 
 a.navleft, a.navleft:link, a.navleft:active, a.navleft:visited {
 	display: block;
 	text-align: center;
-	margin-top: 30%;
-	width: 100%;
-	height: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.navleft .title {
+	font-family: 'Oswald', sans-serif;
+	font-size: 15pt;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.navleft, .navleft:link, .navleft:active, .navleft {
+	font-family: 'Oswald', sans-serif;
+	font-size: 7pt;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 a.anchor {
 	clear: both;
-	font-family: Aleo, Helvetica-light, Arial;
+	display: block;
+	font-family: Helvetica-light, Arial;
 	font-size: 20pt;
 	text-align: center;
-	display: block;
-	width: 100%;
 	text-transform: uppercase;
+	width: 100%;
+}
+
+.subtitle {
+	font-size: 11px;
+	line-height: 10px;
 }
 
 /* LINK BUTTON STYLES */
 
 a.linkbutton, a.linkbutton:link, a.linkbutton:active, a.linkbutton:visited {
+	border: 5px solid #CCCCCC;
+	color: #CCCCCC;
+	display: inline-block;
+	float: left;
 	font-family: 'Oswald', sans-serif;
 	font-size: 14pt;
-	color: #CCCCCC;
-	border: 5px solid #CCCCCC;
-	display: block;
-	text-align: center;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	width: 95%;
+	letter-spacing: 0px;
 	padding: 40px 0px;
-	margin-left: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 20%;
 }
 
 a.linkbutton:hover {
-	color: #673051;
 	border: 5px solid #673051;
+	color: #673051;
 }
-
-/* TOP NAVIGATION */
-
-.logo, a .logo {
-	width: 100px;
-	text-align: center;
-	margin-bottom: 30%;
-}
-
-nav .logo {
-	margin-bottom: 0px;
-	}
-
-nav ul {
-	margin: 0;
-}
-
-ul.navlist {
-	list-style: none;
-	text-align: right;
-}
-
-	ul.navlist li {
-		padding: 5px;
-	}
 
 /* ETC STYLES */
 
@@ -251,34 +205,6 @@ small {
 
 /* MISCALLENOUS */
 
-.credit {
-	text-align: right;
-}
-
-.navleft span {
-	font-family: 'Oswald', sans-serif;
-	font-size: 20pt;
-	font-weight: normal;
-	text-transform: uppercase;
-}
-
-a.anchor span {
-	font-family: 'Oswald', sans-serif;
-	font-size: 30pt;
-	font-weight: normal;
-	letter-spacing: 4px;
-	line-height: 30pt;
-	text-transform: uppercase;
-}
-
-.navleft, .navleft:link, .navleft:active, .navleft {
-	font-family: 'Oswald', sans-serif;
-	font-size: 7pt;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	padding: 5%;
-}
-
 hr {
 	background-color:#cccccc;
 	border-width:0;
@@ -297,12 +223,221 @@ hr {
 	text-align: center;
 }
 
-.colwrap {
-	background-color: ;
-}
 
 .colwrap:before, .colwrap:after {
 display: block;
 content: " ";
 clear: both;
+}
+
+.heading {
+	display: block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 40pt;
+	letter-spacing: 3px;
+	line-height: 50pt;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+aside .logo {
+	width: 70%;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.thumbnail {
+	width: 100%;
+	border: 1px solid #EFEFEF;
+	text-align: center;
+}
+
+.thumbbox {
+	width: 230px;
+	display: inline-block;
+	float: left;
+	padding: 5px 8px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.portfolio {
+	margin: 0 auto;
+	width: auto;
+	position: relative;
+	text-align: center;
+	display: none;
+}
+
+p.clear {
+	clear:both;
+	text-align: right;
+}
+
+.contact .lefttd, .contact td {
+	text-align: right;
+	width: 40%;
+}
+
+.contact .rightd {
+	padding-left: 10px;
+	text-align: left;
+	width: 60%;
+}
+
+table.contact {
+	margin: 0 auto;
+}
+
+.social {
+	width: 30px;
+	margin:  0px 3px;
+}
+
+.social:hover {
+	width: 40px;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+}
+
+/* I got everything from here on out from
+
+credit:
+http://geekgirllife.com/animate-text-over-images-on-hover-without-javascript/ 
+*/
+
+
+/* HOVER PHOTO EFFECT 
+
+credit:
+http://geekgirllife.com/animate-text-over-images-on-hover-without-javascript/ 
+*/
+
+.photo-grid {
+	margin: 1em auto;
+	max-width: 100%;
+	text-align: center;
+}
+ 
+.photo-grid li {
+	border: 5px solid white;
+	display: inline-block;
+	margin: 0px 3px 0px 2px;
+	width: 230px;
+}
+ 
+.photo-grid img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+ 
+.photo-grid figure {
+	height: 230px;
+	overflow: hidden;
+	position: relative;
+	width: 230px;
+}
+ 
+.photo-grid figcaption {
+	background: rgba(103,48,61,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+ 
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 11px;
+	position: relative;
+	top: -40px;
+	width: 230px;
+	vertical-align: middle;
+}
+
+
+/* SHOW TEXT ON HOVER
+
+credit:
+http://geekgirllife.com/animate-text-over-images-on-hover-without-javascript/ 
+*/
+
+.photo-grid li:hover figcaption {
+	opacity: 1;
+}
+
+/* FACDE IN CAPTION
+
+credit:
+http://geekgirllife.com/animate-text-over-images-on-hover-without-javascript/ 
+*/
+
+.photo-grid figcaption {
+	background: rgba(103,48,61,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+	z-index: 100;
+}
+
+/* DROP IN TEXT */
+.photo-grid figcaption p {
+	display: table-cell;
+	position: relative;
+	top: -40px;
+	width: 230px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+ 
+.photo-grid li:hover figcaption p {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+
+/* ZOOM IN IMAGE
+
+credit:
+http://geekgirllife.com/animate-text-over-images-on-hover-without-javascript/ 
+*/
+
+.photo-grid img {
+	display: block;
+	height: auto;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	max-width: 100%;
+}
+ 
+.photo-grid li:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
 }
